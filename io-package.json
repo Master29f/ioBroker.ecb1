@@ -1,0 +1,79 @@
+{
+    "common": {
+        "name": "ecb1",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "ecb1",
+        "titleLang": {
+            "en": "ecb1",
+            "de": "ecb1",
+            "ru": "ecb1",
+            "pt": "ecb1",
+            "nl": "ecb1",
+            "fr": "ECB1",
+            "it": "ecb1",
+            "es": "ecb1",
+            "pl": "ecb1",
+            "zh-cn": "ecb1"
+        },
+        "desc": {
+            "en": "ecb1",
+            "de": "ecb1",
+            "ru": "ecb1",
+            "pt": "ecb1",
+            "nl": "ecb1",
+            "fr": "ECB1",
+            "it": "ecb1",
+            "es": "ecb1",
+            "pl": "ecb1",
+            "zh-cn": "ecb1"
+        },
+        "authors": [
+            "Master29f <Master29f@users.noreply.github.com>"
+        ],
+        "keywords": [
+            "ioBroker",
+            "template",
+            "Smart Home",
+            "home automation"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "ecb1.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/Master29f/ioBroker.ecb1/main/admin/ecb1.png",
+        "readme": "https://github.com/Master29f/ioBroker.ecb1/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "energy",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "poll",
+        "materialize": true,
+        "dependencies": [
+            {
+                "js-controller": ">=2.0.0"
+            }
+        ]
+    },
+    "native": {
+        "ip": "",
+        "delayBetweenRequests": 5000
+    },
+    "objects": [],
+    "instanceObjects": []
+}

@@ -1,0 +1,37 @@
+{
+	"cli": true,
+	"target": "directory",
+	"adapterName": "ecb1",
+	"title": "ecb1",
+	"expert": "no",
+	"features": [
+		"adapter"
+	],
+	"adminFeatures": [],
+	"type": "vehicle",
+	"startMode": "daemon",
+	"connectionType": "cloud",
+	"dataSource": "poll",
+	"connectionIndicator": "no",
+	"language": "JavaScript",
+	"adminReact": "no",
+	"tools": [
+		"ESLint",
+		"type checking"
+	],
+	"i18n": "words.js",
+	"releaseScript": "no",
+	"devServer": "no",
+	"indentation": "Tab",
+	"quotes": "double",
+	"es6class": "yes",
+	"authorName": "Master29f",
+	"authorGithub": "Master29f",
+	"authorEmail": "Master29f@users.noreply.github.com",
+	"gitRemoteProtocol": "HTTPS",
+	"gitCommit": "no",
+	"defaultBranch": "main",
+	"license": "MIT License",
+	"dependabot": "no",
+	"creatorVersion": "2.1.1"
+}
