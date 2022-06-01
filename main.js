@@ -53,7 +53,7 @@ class Ecb1 extends utils.Adapter {
 	 * @param {ioBroker.State | null | undefined} state
 	 */
 	onStateChange(id, state) {
-		if (!state) return;
+		if (!state || state.from.includes(this.namespace)) return;
 		/*if (!state.from.includes(this.namespace)) {
 			if (this.loopInterval) this.clearTimeout(this.loopInterval);
 			const elems = id.split(".").splice(2);
@@ -75,6 +75,9 @@ class Ecb1 extends utils.Adapter {
 				}, this.config.delayBetweenRequests);
 			});
 		}*/
+
+		//prevent sync when updating state
+		if (this.loopInterval) this.clearTimeout(this.loopInterval);
 		id = id.split(".").splice(2).reduce((p, c) => p + "." + c);
 		switch (id) {
 			case "chargecontrols.0.mode":
@@ -93,6 +96,9 @@ class Ecb1 extends utils.Adapter {
 				state.ack = false;
 				break;
 		}
+		this.loopInterval = this.setTimeout(() => {
+			this.loop();
+		}, this.config.delayBetweenRequests);
 
 	}
 	/**
